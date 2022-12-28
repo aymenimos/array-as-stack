@@ -1,6 +1,6 @@
 public class tostack {
 
-    private int size = 5;
+    private int size = 10;
     private int[] arr;
     private int top;
    private int maxtop;
@@ -51,16 +51,18 @@ public class tostack {
         if (isempty()) {
             System.out.println("the stack is empty from top method");
         } else {
-            System.out.println(arr[top] + " from top method");
+            System.out.println(arr[top] + " is now the top ");
         }
 
     }
 
     public void popuntilempty() {
         while (isempty() == false) {
-            System.out.println(arr[top]);
-            top--;
+            // System.out.println(arr[top]);
+            // top--;
+            pop();
         }
+        System.out.println("the stack is empty no more to pope");
 
     }
 
